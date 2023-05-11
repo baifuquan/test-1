@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hzy.mapper.TJmRebateSummaryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hzy.entity.TJmRebateSummary">
+        <id column="id" property="id" />
+        <result column="batch_number" property="batchNumber" />
+        <result column="org_id" property="orgId" />
+        <result column="org_name" property="orgName" />
+        <result column="sap_customer" property="sapCustomer" />
+        <result column="sap_company" property="sapCompany" />
+        <result column="stat_date" property="statDate" />
+        <result column="year" property="year" />
+        <result column="month" property="month" />
+        <result column="service_number" property="serviceNumber" />
+        <result column="order_time" property="orderTime" />
+        <result column="sign_time" property="signTime" />
+        <result column="pay_type" property="payType" />
+        <result column="amount_total" property="amountTotal" />
+        <result column="rebate_type" property="rebateType" />
+        <result column="business_type" property="businessType" />
+        <result column="kpi_sum" property="kpiSum" />
+        <result column="rebate_point_kpi" property="rebatePointKpi" />
+        <result column="rebate_point_extra" property="rebatePointExtra" />
+        <result column="rebate_point" property="rebatePoint" />
+        <result column="rebate_total" property="rebateTotal" />
+        <result column="step_scale" property="stepScale" />
+        <result column="rebate_point_full" property="rebatePointFull" />
+        <result column="rebate_total_full" property="rebateTotalFull" />
+        <result column="rebate_point_jd" property="rebatePointJd" />
+        <result column="rebate_total_jd" property="rebateTotalJd" />
+        <result column="rebate_point_jt" property="rebatePointJt" />
+        <result column="step_scale_jt" property="stepScaleJt" />
+        <result column="rebate_total_jt" property="rebateTotalJt" />
+        <result column="mode" property="mode" />
+        <result column="goods_id" property="goodsId" />
+        <result column="goods_name" property="goodsName" />
+        <result column="goods_count" property="goodsCount" />
+        <result column="real_price" property="realPrice" />
+        <result column="pn_code" property="pnCode" />
+        <result column="is_calculation_finished" property="isCalculationFinished" />
+        <result column="is_invoice" property="isInvoice" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="p_service_number" property="pServiceNumber" />
+        <result column="insurance_type" property="insuranceType" />
+        <result column="phone_id" property="phoneId" />
+        <result column="pushed_code" property="pushedCode" />
+        <result column="pushed_desc" property="pushedDesc" />
+        <result column="is_check" property="isCheck" />
+        <result column="is_sku_invoice" property="isSkuInvoice" />
+        <result column="is_online_rebate" property="isOnlineRebate" />
+        <result column="is_configured" property="isConfigured" />
+        <result column="first_category_id" property="firstCategoryId" />
+        <result column="first_category_name" property="firstCategoryName" />
+        <result column="second_category_id" property="secondCategoryId" />
+        <result column="second_category_name" property="secondCategoryName" />
+        <result column="third_category_id" property="thirdCategoryId" />
+        <result column="third_category_name" property="thirdCategoryName" />
+        <result column="out_month" property="outMonth" />
+        <result column="province_name" property="provinceName" />
+        <result column="city_name" property="cityName" />
+        <result column="company_name" property="companyName" />
+        <result column="is_settled" property="isSettled" />
+        <result column="floor_price" property="floorPrice" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, batch_number, org_id, org_name, sap_customer, sap_company, stat_date, year, month, service_number, order_time, sign_time, pay_type, amount_total, rebate_type, business_type, kpi_sum, rebate_point_kpi, rebate_point_extra, rebate_point, rebate_total, step_scale, rebate_point_full, rebate_total_full, rebate_point_jd, rebate_total_jd, rebate_point_jt, step_scale_jt, rebate_total_jt, mode, goods_id, goods_name, goods_count, real_price, pn_code, is_calculation_finished, is_invoice, create_time, update_time, p_service_number, insurance_type, phone_id, pushed_code, pushed_desc, is_check, is_sku_invoice, is_online_rebate, is_configured, first_category_id, first_category_name, second_category_id, second_category_name, third_category_id, third_category_name, out_month, province_name, city_name, company_name, is_settled, floor_price
+    </sql>
+
+</mapper>

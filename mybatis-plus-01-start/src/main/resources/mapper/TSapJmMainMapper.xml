@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hzy.mapper.TSapJmMainMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hzy.entity.TSapJmMain">
+        <id column="id" property="id" />
+        <result column="data_type" property="dataType" />
+        <result column="push_stat" property="pushStat" />
+        <result column="push_time" property="pushTime" />
+        <result column="push_desc" property="pushDesc" />
+        <result column="create_date" property="createDate" />
+        <result column="business_type" property="businessType" />
+        <result column="summary_id" property="summaryId" />
+        <result column="batch_id" property="batchId" />
+        <result column="business_date" property="businessDate" />
+        <result column="supplier" property="supplier" />
+        <result column="customer" property="customer" />
+        <result column="company" property="company" />
+        <result column="department" property="department" />
+        <result column="original_order" property="originalOrder" />
+        <result column="remark" property="remark" />
+        <result column="user_id" property="userId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, data_type, push_stat, push_time, push_desc, create_date, business_type, summary_id, batch_id, business_date, supplier, customer, company, department, original_order, remark, user_id
+    </sql>
+
+</mapper>

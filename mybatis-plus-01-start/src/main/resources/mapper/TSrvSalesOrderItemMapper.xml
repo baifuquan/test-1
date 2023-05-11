@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hzy.mapper.TSrvSalesOrderItemMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hzy.entity.TSrvSalesOrderItem">
+        <id column="id" property="id" />
+        <result column="service_number" property="serviceNumber" />
+        <result column="deliver_id" property="deliverId" />
+        <result column="goods_id" property="goodsId" />
+        <result column="pn_code" property="pnCode" />
+        <result column="goods_name" property="goodsName" />
+        <result column="goods_count" property="goodsCount" />
+        <result column="origin_price" property="originPrice" />
+        <result column="shop_price" property="shopPrice" />
+        <result column="jm_price" property="jmPrice" />
+        <result column="real_shop_price" property="realShopPrice" />
+        <result column="create_time" property="createTime" />
+        <result column="create_person" property="createPerson" />
+        <result column="mode" property="mode" />
+        <result column="is_mobile" property="isMobile" />
+        <result column="insurance_mobile_sn" property="insuranceMobileSn" />
+        <result column="insurance_sku" property="insuranceSku" />
+        <result column="batched_id" property="batchedId" />
+        <result column="batched_name" property="batchedName" />
+        <result column="batched_price" property="batchedPrice" />
+        <result column="seq" property="seq" />
+        <result column="item_ids" property="itemIds" />
+        <result column="image_url" property="imageUrl" />
+        <result column="ext" property="ext" />
+        <result column="target_mihome_id" property="targetMihomeId" />
+        <result column="best_mihome_id" property="bestMihomeId" />
+        <result column="oversellmark" property="oversellmark" />
+        <result column="shipment_fee" property="shipmentFee" />
+        <result column="stock_channel" property="stockChannel" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, service_number, deliver_id, goods_id, pn_code, goods_name, goods_count, origin_price, shop_price, jm_price, real_shop_price, create_time, create_person, mode, is_mobile, insurance_mobile_sn, insurance_sku, batched_id, batched_name, batched_price, seq, item_ids, image_url, ext, target_mihome_id, best_mihome_id, oversellmark, shipment_fee, stock_channel
+    </sql>
+
+</mapper>

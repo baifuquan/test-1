@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hzy.mapper.TSapJmDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hzy.entity.TSapJmDetail">
+        <id column="id" property="id" />
+        <result column="main_id" property="mainId" />
+        <result column="create_date" property="createDate" />
+        <result column="summary_d" property="summaryD" />
+        <result column="row_id" property="rowId" />
+        <result column="sku1" property="sku1" />
+        <result column="sku2" property="sku2" />
+        <result column="sku3" property="sku3" />
+        <result column="quantity1" property="quantity1" />
+        <result column="quantity2" property="quantity2" />
+        <result column="original_price" property="originalPrice" />
+        <result column="receivables" property="receivables" />
+        <result column="currency" property="currency" />
+        <result column="batchId" property="batchid" />
+        <result column="original_order" property="originalOrder" />
+        <result column="original_order_date" property="originalOrderDate" />
+        <result column="remark" property="remark" />
+        <result column="profit_center" property="profitCenter" />
+        <result column="assignment" property="assignment" />
+        <result column="refer1" property="refer1" />
+        <result column="refer2" property="refer2" />
+        <result column="refer3" property="refer3" />
+        <result column="trade_partner" property="tradePartner" />
+        <result column="invoice_code" property="invoiceCode" />
+        <result column="invoice_number" property="invoiceNumber" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, main_id, create_date, summary_d, row_id, sku1, sku2, sku3, quantity1, quantity2, original_price, receivables, currency, batchId, original_order, original_order_date, remark, profit_center, assignment, refer1, refer2, refer3, trade_partner, invoice_code, invoice_number
+    </sql>
+
+</mapper>

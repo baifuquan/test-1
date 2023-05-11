@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hzy.mapper.TJmBankDirectlinkRecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hzy.entity.TJmBankDirectlinkRecord">
+        <id column="id" property="id" />
+        <result column="trade_no" property="tradeNo" />
+        <result column="sap_company_code" property="sapCompanyCode" />
+        <result column="act_date" property="actDate" />
+        <result column="amount" property="amount" />
+        <result column="knot_id" property="knotId" />
+        <result column="is_pushed" property="isPushed" />
+        <result column="balance" property="balance" />
+        <result column="currency_code" property="currencyCode" />
+        <result column="bill_type" property="billType" />
+        <result column="bill_category" property="billCategory" />
+        <result column="bill_status" property="billStatus" />
+        <result column="description" property="description" />
+        <result column="business_type" property="businessType" />
+        <result column="update_times" property="updateTimes" />
+        <result column="op_account_name" property="opAccountName" />
+        <result column="op_bank_name" property="opBankName" />
+        <result column="account_no_md5" property="accountNoMd5" />
+        <result column="account_no" property="accountNo" />
+        <result column="op_account_no_md5" property="opAccountNoMd5" />
+        <result column="op_account_no" property="opAccountNo" />
+        <result column="op_bank_code" property="opBankCode" />
+        <result column="op_cheque_type" property="opChequeType" />
+        <result column="op_cheque_num" property="opChequeNum" />
+        <result column="cheque_num" property="chequeNum" />
+        <result column="appid" property="appid" />
+        <result column="trn_code" property="trnCode" />
+        <result column="server_tid" property="serverTid" />
+        <result column="act_timestamp" property="actTimestamp" />
+        <result column="add_time" property="addTime" />
+        <result column="service_number" property="serviceNumber" />
+        <result column="last_update_time" property="lastUpdateTime" />
+        <result column="last_update_person" property="lastUpdatePerson" />
+        <result column="log_info" property="logInfo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, trade_no, sap_company_code, act_date, amount, knot_id, is_pushed, balance, currency_code, bill_type, bill_category, bill_status, description, business_type, update_times, op_account_name, op_bank_name, account_no_md5, account_no, op_account_no_md5, op_account_no, op_bank_code, op_cheque_type, op_cheque_num, cheque_num, appid, trn_code, server_tid, act_timestamp, add_time, service_number, last_update_time, last_update_person, log_info
+    </sql>
+
+</mapper>

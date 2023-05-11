@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hzy.mapper.TJmBankRecordRefundMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hzy.entity.TJmBankRecordRefund">
+        <id column="id" property="id" />
+        <result column="record_id" property="recordId" />
+        <result column="refund_no" property="refundNo" />
+        <result column="reason" property="reason" />
+        <result column="create_time" property="createTime" />
+        <result column="refund_state" property="refundState" />
+        <result column="refund_record_id" property="refundRecordId" />
+        <result column="bill_status" property="billStatus" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, record_id, refund_no, reason, create_time, refund_state, refund_record_id, bill_status
+    </sql>
+
+</mapper>

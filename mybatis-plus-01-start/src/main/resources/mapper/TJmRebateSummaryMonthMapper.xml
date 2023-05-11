@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hzy.mapper.TJmRebateSummaryMonthMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hzy.entity.TJmRebateSummaryMonth">
+        <id column="id" property="id" />
+        <result column="batch_number" property="batchNumber" />
+        <result column="org_id" property="orgId" />
+        <result column="org_name" property="orgName" />
+        <result column="sap_customer" property="sapCustomer" />
+        <result column="sap_company" property="sapCompany" />
+        <result column="month" property="month" />
+        <result column="goods_id" property="goodsId" />
+        <result column="goods_name" property="goodsName" />
+        <result column="goods_count" property="goodsCount" />
+        <result column="real_price" property="realPrice" />
+        <result column="mode" property="mode" />
+        <result column="pay_amount_total" property="payAmountTotal" />
+        <result column="refund_amount_total" property="refundAmountTotal" />
+        <result column="rebate_pay_total_jt" property="rebatePayTotalJt" />
+        <result column="rebate_refund_total_jt" property="rebateRefundTotalJt" />
+        <result column="valid_status" property="validStatus" />
+        <result column="create_person" property="createPerson" />
+        <result column="update_person" property="updatePerson" />
+        <result column="update_desc" property="updateDesc" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="pushed_desc" property="pushedDesc" />
+        <result column="pushed_code" property="pushedCode" />
+        <result column="out_month" property="outMonth" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, batch_number, org_id, org_name, sap_customer, sap_company, month, goods_id, goods_name, goods_count, real_price, mode, pay_amount_total, refund_amount_total, rebate_pay_total_jt, rebate_refund_total_jt, valid_status, create_person, update_person, update_desc, create_time, update_time, pushed_desc, pushed_code, out_month
+    </sql>
+
+</mapper>
